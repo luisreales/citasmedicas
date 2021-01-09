@@ -56,6 +56,14 @@ function App(){
     //Mensaje condicional si hay citas o no
     const titulo = citas.length === 0 ? 'No hay citas' : 'Administra tus citas';
 
+    
+    const divStyle = {
+        
+        color:'white',
+        margin: '40px',
+    
+    };
+
     return(
         <Fragment>
             <h1>Administrador de Pacientes</h1>
@@ -80,6 +88,9 @@ function App(){
                     </div>
                 </div>
             </div>
+            <footer>
+                <h6 style={divStyle}>Desarrollado por: <a href="http://www.linkedin.com/in/luisreales" target="_blank" rel="noopener noreferrer">Luis Reales Guerra</a> - {new Date().getFullYear()}</h6>
+            </footer>
         </Fragment>
         
     );
